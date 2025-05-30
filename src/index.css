@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.app-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Dark Mode Styles */
+.dark {
+  background-color: #121212;
+  color: #ddd;
+}
+
+.dark .app-container {
+  background-color: #1e1e1e;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+input, select, button {
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  margin: 8px 4px 16px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark input, .dark select {
+  background-color: #333;
+  border-color: #555;
+  color: #eee;
+}
+
+.dark button {
+  background-color: #444;
+  border-color: #666;
+  color: #eee;
+}
+
+input:focus, select:focus, button:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 5px #0066cc;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.search-input {
+  flex-grow: 1;
+  min-width: 180px;
+}
+
+.sort-select {
+  min-width: 120px;
+}
+
+/* Book Form */
+.book-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.book-form input {
+  flex: 1 1 150px;
+  max-width: 220px;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004a99;
+}
+
+/* Success Message */
+.success-message {
+  color: green;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Spinner */
+.spinner {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* Book List */
+.book-list {
+  list-style: none;
+  padding: 0;
+}
+
+.book-item {
+  background-color: #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.dark .book-item {
+  background-color: #2a2a2a;
+}
+
+.actions button {
+  margin-left: 6px;
+  background-color: #cc3300;
+}
+
+.actions button:hover {
+  background-color: #992200;
+}
+
+/* Login Form */
+.login-form {
+  max-width: 320px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input {
+  margin-bottom: 10px;
+}
+
+/* Smaller icon for dark/light toggle */
+.toggle-icon.small {
+  font-size: 1rem; /* smaller icon */
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/* Toggle Button */
+.toggle-btn.small {
+  font-size: 0.85rem; /* smaller text */
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1.5px solid currentColor;
+  background-color: transparent;
+  color: inherit;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-btn.small:hover {
+  background-color: black;
+  color: #fff;
+}
+
+/* Add this at the bottom of your existing index.css */
+.dark-mode-toggle.small {
+  font-size: 0.5rem;
+  padding: 6px 10px;
+  margin-left: 10px;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.link-button:hover {
+  background-color: whitesmoke;
+  color: #0056b3;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.logout-button:hover {
+  background-color: #a71d2a;
+}
